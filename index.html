@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="page1.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</head>
+<body>
+  <!-- Side Menu -->
+  <nav id="side-menu">
+    <div class="logo"><img src="wlogo.png"  width="150px"></div>
+    <ul>
+        <a href="index.html"><li>Dashboard</li></a>
+        <a href="page2.html"><li>Tables</li></a>
+
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <div class="profile">
+        <img src="plogo.png" width="50px" style="position: relative; right: 1rem;" alt="">
+    </div>
+    <div id="weather-widget">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="get-weather">Get Weather</button>
+   
+    </div>
+
+<div class="weatherdata">
+
+  <div id="weather-details"></div>
+
+  <div id="weather-image"></div>
+
+</div>
+
+<!-- Weather Charts -->
+    <div id="charts">
+      <div class="c1">
+        <canvas id="temp-bar-chart"></canvas>
+      </div>
+    <div class="c2">
+      <canvas id="weather-doughnut-chart"></canvas>
+    </div>
+  <div class="c3">
+    <canvas id="temp-line-chart"></canvas>
+  </div>
+   
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

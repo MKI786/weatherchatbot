@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="page2.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Side Menu -->
+  <nav id="side-menu">
+    <div class="logo"><img src="wlogo.png"  width="150px"></div>
+    <ul>
+        <a href="index.html"><li>Dashboard</li></a>
+        <a href="page2.html"><li>Tables</li></a>
+
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div id="main-content">
+    <div class="profile">
+        <img src="plogo.png" width="50px" style="position: relative; right: 1rem;" alt="">
+    </div>
+    <div id="weather-widget">
+      <input type="text" id="city-input" placeholder="Enter city name">
+      <button id="get-weather">Get Weather</button>
+    </div>
+
+
+<div class="r2">
+
+    <!-- Weather Table -->
+    <div id="weather-table">
+      <table id="forecast-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Temperature</th>
+            <th>Conditions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="pagination-controls"></div>
+    </div>
+
+    <div id="chatbot">
+      <h2>AI ChatBot feel free to ask !</h2>
+      <div id="cr1">
+        <input type="text" id="chat-input" style="outline: none; padding: 1rem;" placeholder="Ask me anything...">
+        <button id="send-chat" style="outline: none; cursor: pointer;  padding: 1rem; background-color: green; color: white;">Send</button>
+      </div>
+
+      <div id="chat-response"></div>
+    </div>
+</div>
+
+
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
